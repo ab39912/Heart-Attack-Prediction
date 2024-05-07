@@ -20,3 +20,25 @@ restecg: Resting electrocardiographic results.</br>
 thalach: Maximum heart rate achieved.</br>
 exang: Exercise induced angina.</br>
 oldpeak: ST depression induced by exercise relative to rest</br>
+
+Flow of the Project:
+1. The dataset 'heart.csv' was first understood using EDA and using libraries such as pandas and numpy.</br>
+2. For visualisation libraries matplotlib.pyplot and searborn were imported.</br>
+3. The csv file is read in the form of dataframe.</br>
+4. The dataframe was understood using the info command.</br>
+5. The dataframe was checked for null values.</br>
+6. Heat map and histogram were plotted to check the correlation between the features.</br>
+7. Dataframe was divided into parts X and y were X contained all the relative features and y the target.</br>
+8. Later the dataset was split using train test split from sklearn library.
+9. StandardScaler libary was used to transform the dataset.
+10. Now different models were used such as Logistic Regression, Naive Bayes, Random Forest Classifier, Extreme Gradient Boost, K- Neighbors Classifier, Decision Tree Classifier, Suppport Vector Classifier </br>
+11. Next we plotted the importance of features in the form of barplot</br>
+12. A reciver Operating Characteristic Curve was also plotted.</br>
+13. At last a dataframe was created to display the different models and their accurary.</br>
+14. A Bar graph was plotted to display the models and their accuary. </br>
+15. Finally stacked CV classifier was used to increase the accurary of the model. </br>
+
+Conclusion:
+1. We can conclude that SVM gave the best accuracy.</br>
+2. From the features chest pain , excercise induced angina and cornory heart disease are the main causes of heart attack.</br>
+3.  Ensembling technique increase the accuracy of the model.
